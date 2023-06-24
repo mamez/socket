@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="headLayout">
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+	<nav th:fragment="navLayout"
+		class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Recursos
+			Humanos</a>
+	</nav>
+	<nav th:fragment="menuLayout"
+		class="col-md-2 d-none d-md-block bg-light sidebar">
+		<div class="sidebar-sticky">
+			<ul class="nav flex-column">
+				<li class="nav-item"><a class="nav-link" href="#"> <span
+						data-feather="home"></span> Inicio <span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="#"> <span
+						data-feather="file"></span> Pais
+				</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div th:fragment="footer">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+
+		<!-- Icons -->
+		<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+		<script>
+      feather.replace()
+    </script>
+	</div>
+</body>
+</html>
